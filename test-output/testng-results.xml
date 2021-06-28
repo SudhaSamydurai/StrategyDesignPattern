@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-06-28T20:50:52 IST" name="Default suite" finished-at="2021-06-28T20:51:17 IST" duration-ms="24791">
+    <groups>
+    </groups>
+    <test started-at="2021-06-28T20:50:52 IST" name="Default test" finished-at="2021-06-28T20:51:17 IST" duration-ms="24791">
+      <class name="StrategyDSPTest.PaymentScreenTest">
+        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:StrategyDSPTest.PaymentScreenTest@7c469c48]" started-at="2021-06-28T20:50:52 IST" name="setUpDriver" finished-at="2021-06-28T20:51:06 IST" duration-ms="13845" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method is-config="true" signature="setPaymentScreen()[pri:0, instance:StrategyDSPTest.PaymentScreenTest@7c469c48]" started-at="2021-06-28T20:51:06 IST" name="setPaymentScreen" finished-at="2021-06-28T20:51:06 IST" duration-ms="44" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setPaymentScreen -->
+        <test-method signature="makePayment(java.lang.String, java.util.Map)[pri:0, instance:StrategyDSPTest.PaymentScreenTest@7c469c48]" started-at="2021-06-28T20:51:06 IST" name="makePayment" data-provider="getData" finished-at="2021-06-28T20:51:12 IST" duration-ms="6393" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CC]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{cc=12345678901, cvv=322, year=2022}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- makePayment -->
+        <test-method is-config="true" signature="setPaymentScreen()[pri:0, instance:StrategyDSPTest.PaymentScreenTest@7c469c48]" started-at="2021-06-28T20:51:13 IST" name="setPaymentScreen" finished-at="2021-06-28T20:51:13 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setPaymentScreen -->
+        <test-method signature="makePayment(java.lang.String, java.util.Map)[pri:0, instance:StrategyDSPTest.PaymentScreenTest@7c469c48]" started-at="2021-06-28T20:51:13 IST" name="makePayment" data-provider="getData" finished-at="2021-06-28T20:51:16 IST" duration-ms="3913" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NB]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{bank=WELLS FARGO, pin=1234, account=Myaccount12}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- makePayment -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:StrategyDSPTest.PaymentScreenTest@7c469c48]" started-at="2021-06-28T20:51:16 IST" name="quitDriver" finished-at="2021-06-28T20:51:17 IST" duration-ms="537" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- StrategyDSPTest.PaymentScreenTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
