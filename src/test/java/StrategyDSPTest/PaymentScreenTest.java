@@ -17,18 +17,14 @@ public class PaymentScreenTest extends BaseTest{
 	
 	private PaymentScreen paymentScreen;
 
-	@BeforeMethod
-	public void setPaymentScreen() {
-		this.paymentScreen = new PaymentScreen(this.driver);
-	}
-	
+
 	@Test(dataProvider = "getData")
 	public void makePayment(String option, Map<String, String> paymentDetails) {
-		
-		this.paymentScreen.goTo();
-		this.paymentScreen.getUserInformation().enterUserInformation("Sudha", "su", "hellow@gmail.com");
-		this.paymentScreen.setPaymentOption(PaymentOptionFactory.get(option));
-		this.paymentScreen.pay(paymentDetails);
+		paymentScreen = new PaymentScreen(this.driver);
+		paymentScreen.goTo();
+		paymentScreen.getUserInformation().enterUserInformation("Sudha", "su", "hellow@gmail.com");
+		paymentScreen.setPaymentOption(PaymentOptionFactory.get(option));
+		paymentScreen.pay(paymentDetails);
 		String orderNumber = this.paymentScreen.getOrder().placeOrder();
 		System.out.println("Order Number is "+orderNumber);
 		
